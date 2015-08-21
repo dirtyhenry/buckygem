@@ -1,6 +1,6 @@
 # Buckygem
 
-TODO: Write a gem description
+A gem for random ruby utilities.
 
 ## Installation
 
