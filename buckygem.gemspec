@@ -6,10 +6,10 @@ require 'buckygem/version'
 Gem::Specification.new do |spec|
   spec.name          = "buckygem"
   spec.version       = Buckygem::VERSION
-  spec.authors       = ["Mickaël Floc'hlay"]
-  spec.email         = ["dirtyhenry@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Bootstragram"]
+  spec.email         = ["bootstrabot@gmail.com"]
+  spec.summary       = %q{A gem for random ruby utilities.}
+  spec.description   = %q{Whenever Bootstragram has a random Ruby need for which sharing makes sense but a dedicated gem does not, it ends up here.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+
+  spec.add_runtime_dependency "mini_magick"
 end

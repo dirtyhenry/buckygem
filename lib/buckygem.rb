@@ -1,5 +1,6 @@
 require "buckygem/version"
 
 module Buckygem
-  # Your code goes here...
+  autoload :ImagesCollection, 'buckygem/images_collection'
+  autoload :ImageMetadata, 'buckygem/image_metadata'
 end
