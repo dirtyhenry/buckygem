@@ -42,7 +42,7 @@ To get dimensions of an image located at the relative path `foo.png`:
            
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/buckygem/fork )
+1. Fork it ( https://github.com/Bootstragram/buckygem/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
