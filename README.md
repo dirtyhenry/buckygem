@@ -30,10 +30,10 @@ To get an `Array` of the absolute paths of images contained in folder with the r
 To get dimensions of an image located at the relative path `foo.png`:
 
     image_metadata = Buckygem::ImageMetadata.new("foo.png")
-    image_metadata.absolute_path # /bar/.../foo.png
-    image_metadata.name          # foo
-    image_metadata.width         # 640
-    image_metadata.height        # 480
+    image_metadata.absolute_path   # /bar/.../foo.png
+    image_metadata.name            # foo
+    image_metadata.width           # 640
+    image_metadata.height          # 480
 
 `image_metadata.to_less` will return a `String` containing the following:
 
