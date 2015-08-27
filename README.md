@@ -1,5 +1,7 @@
 # Buckygem
 
+[![Build Status](https://travis-ci.org/Bootstragram/buckygem.svg?branch=master)](https://travis-ci.org/Bootstragram/buckygem)
+
 A gem for random ruby utilities.
 
 ## Installation
