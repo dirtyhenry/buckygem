@@ -19,7 +19,7 @@ module Buckygem
         next if item == '.' or item == '..'
   
         if ImagesCollection.is_image_name? item
-          @images_cache << item
+          @images_cache << File.absolute_path(item)
         end
       end
       

@@ -15,6 +15,10 @@ describe Buckygem::ImagesCollection do
     it "parses directories knowing what is an image and what is not" do
       image_collection = Buckygem::ImagesCollection.new("test")
       expect(image_collection.images.count).to eq all_images_in_test_dir.count
+      image_collection.images.each do |image|
+        expect(File.file? image).to be true
+        expect(image).to eq File.absolute_path(image)
+      end
     end
     
     it "knows what are image names and what's not" do
