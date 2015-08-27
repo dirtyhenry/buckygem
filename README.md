@@ -40,6 +40,14 @@ To get dimensions of an image located at the relative path `foo.png`:
     @foo_width: 640px;
     @foo_height: 480px;
            
+### Apply ImageMagick's convert to a folder
+
+To apply ImageMagick's `convert` command line tool to every image in folder `source` and store
+copies respecting the same arboresence in `target`, use:
+
+    image_folder_converter = Buckygem::ImageFolderConverter.new
+    image_folder_converter.convert 'source' 'target' '-scale 25%'
+
 ## Contributing
 
 1. Fork it ( https://github.com/Bootstragram/buckygem/fork )
