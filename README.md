@@ -1,5 +1,7 @@
 # Buckygem
 
+[![Build Status](https://travis-ci.org/Bootstragram/buckygem.svg?branch=master)](https://travis-ci.org/Bootstragram/buckygem)
+
 A gem for random ruby utilities.
 
 ## Installation
@@ -47,6 +49,13 @@ copies respecting the same arboresence in `target`, use:
 
     image_folder_converter = Buckygem::ImageFolderConverter.new
     image_folder_converter.convert 'source' 'target' '-scale 25%'
+
+### Liquid `i18n_date` filter
+
+Usage: 
+
+    {{ my_date | i18n_date: 'default', 'en' }} # 'June 20, 2015'
+    {{ my_date | i18n_date: 'default', 'fr' }} # '20 juin 2015'   
 
 ## Contributing
 
