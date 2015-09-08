@@ -50,6 +50,13 @@ copies respecting the same arboresence in `target`, use:
     image_folder_converter = Buckygem::ImageFolderConverter.new
     image_folder_converter.convert 'source' 'target' '-scale 25%'
 
+### Liquid `i18n_date` filter
+
+Usage: 
+
+    {{ my_date | i18n_date: 'default', 'en' }} # 'June 20, 2015'
+    {{ my_date | i18n_date: 'default', 'fr' }} # '20 juin 2015'   
+
 ## Contributing
 
 1. Fork it ( https://github.com/Bootstragram/buckygem/fork )

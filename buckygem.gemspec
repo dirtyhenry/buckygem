@@ -23,4 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
 
   spec.add_runtime_dependency "mini_magick"
+  spec.add_runtime_dependency "i18n"
+  spec.add_runtime_dependency "liquid", ">= 3.0"
 end
