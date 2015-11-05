@@ -1,3 +1,5 @@
+# Image Utils
+
 require 'find'
 
 module Buckygem

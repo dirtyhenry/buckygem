@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "mini_magick"
   spec.add_runtime_dependency "i18n"
   spec.add_runtime_dependency "liquid", "~> 2.6.1" # Same as Jekyll 2.5.3
+  spec.add_runtime_dependency "activesupport" # for URL Management
 end

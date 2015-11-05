@@ -1,3 +1,5 @@
+# Liquid filter to provide a way to output an internationalized date
+
 require 'liquid'
 require 'i18n'
 

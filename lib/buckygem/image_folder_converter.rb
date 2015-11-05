@@ -1,3 +1,5 @@
+# Image Utils
+
 require 'mini_magick'
 
 module Buckygem
