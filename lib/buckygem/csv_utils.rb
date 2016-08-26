@@ -1,4 +1,5 @@
 # Collection of CSV utilities
+# TODO Could maybe be improved by: http://stackoverflow.com/questions/14199784/convert-csv-file-into-array-of-hashes
 require 'csv'
 
 module Buckygem
