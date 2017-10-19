@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "mini_magick"
   spec.add_runtime_dependency "i18n"
-  spec.add_runtime_dependency "liquid", "~> 3.0" # Same as Jekyll 3.1.6
+  spec.add_runtime_dependency "liquid", "~> 4.0" # Same as Jekyll 3.6.0
 end
