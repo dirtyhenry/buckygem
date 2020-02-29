@@ -23,5 +23,5 @@ Older versions of this package were evolving at a really high pace.
 The package was not stable enough and maintaining a Changelog would have a real
 pain in the b\*\*\*.
 
-[0.4.3]: https://github.com/Bootstragram/buckygem/compare/0.4.2...0.4.3
-[0.4.2]: https://github.com/Bootstragram/buckygem/compare/0.4.1...0.4.2
+[0.4.3]: https://github.com/dirtyhenry/buckygem/compare/0.4.2...0.4.3
+[0.4.2]: https://github.com/dirtyhenry/buckygem/compare/0.4.1...0.4.2

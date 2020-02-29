@@ -1,6 +1,6 @@
 # Buckygem
 
-[![Build Status](https://travis-ci.org/Bootstragram/buckygem.svg?branch=master)](https://travis-ci.org/Bootstragram/buckygem)
+[![Build Status](https://travis-ci.org/dirtyhenry/buckygem.svg?branch=master)](https://travis-ci.org/dirtyhenry/buckygem)
 
 A gem for random ruby utilities.
 
@@ -42,7 +42,6 @@ To get dimensions of an image located at the relative path `foo.png`:
     @foo_width: 640px;
     @foo_height: 480px;
 
-
 ### Apply ImageMagick's convert to a folder
 
 To apply ImageMagick's `convert` command line tool to every image in folder `source` and store
@@ -60,7 +59,7 @@ Usage:
 
 ## Contributing
 
-1. Fork it ( https://github.com/Bootstragram/buckygem/fork )
+1. Fork it ( https://github.com/dirtyhenry/buckygem/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
