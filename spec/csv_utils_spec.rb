@@ -8,13 +8,15 @@ describe Buckygem::CSVUtils do
       let(:csv_file_path) { 'spec/resources/sample-with-headers.csv' }
 
       it 'can handle a 1 value situation' do
-        result = Buckygem::CSVUtils.csv_to_hash(csv_file_path, { headers: true }, 'Field2', 'Field3')
+        result = Buckygem::CSVUtils.csv_to_hash(csv_file_path, { headers: true },
+                                                'Field2', 'Field3')
         expect(result.count).to be 3
         expect(result['value12']).to eq 'value13'
       end
 
       it 'can handle a 3 values situation' do
-        result = Buckygem::CSVUtils.csv_to_hash(csv_file_path, { headers: true }, 'Field2', 'Field3', 'Field1', 'Field4')
+        result = Buckygem::CSVUtils.csv_to_hash(csv_file_path, { headers: true },
+                                                'Field2', 'Field3', 'Field1', 'Field4')
         expect(result.count).to be 3
 
         expect(result['value12'].count).to eq 3

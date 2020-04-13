@@ -3,6 +3,7 @@
 require 'mini_magick'
 
 module Buckygem
+  # Utility to provide image metadata.
   class ImageMetadata
     attr_accessor :absolute_path
     attr_accessor :name

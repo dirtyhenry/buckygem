@@ -4,7 +4,7 @@ install:
 	bundle install
 
 test:
-	rake
+	bundle exec rspec
 
 lint:
 	bundle exec rubocop

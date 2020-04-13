@@ -10,7 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Mickaël Floc’hlay']
   spec.email         = ['mick@mickf.net']
   spec.summary       = 'A gem for random ruby utilities.'
-  spec.description   = 'Whenever I have a random Ruby need for which sharing makes sense but a dedicated gem does not, it ends up here.'
+  spec.description   = 'Whenever I have a random Ruby need for which sharing
+  makes sense but a dedicated gem does not, it ends up here.'
   spec.homepage      = ''
   spec.license       = 'MIT'
 

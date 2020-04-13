@@ -16,8 +16,8 @@ describe Buckygem::ImageFolderConverter do
 
       # The size was doubled
       image_metadata = Buckygem::ImageMetadata.new('test-tmp/images/boot.png')
-      expect(image_metadata.width).to eq (32 * 2)
-      expect(image_metadata.height).to eq (24 * 2)
+      expect(image_metadata.width).to eq(32 * 2)
+      expect(image_metadata.height).to eq(24 * 2)
 
       FileUtils.rm_rf('test-tmp', secure: true)
     end
