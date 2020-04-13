@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Collection of CSV utilities
 # TODO Could maybe be improved by: http://stackoverflow.com/questions/14199784/convert-csv-file-into-array-of-hashes
 require 'csv'
@@ -8,7 +10,7 @@ module Buckygem
       res = {}
       CSV.foreach(csv_file_path, options) do |row|
         if values.count == 0
-          raise "At least 1 value is required"
+          raise 'At least 1 value is required'
         elsif values.count == 1
           res[row[key]] = row[values[0]]
         else

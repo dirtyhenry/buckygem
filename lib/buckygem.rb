@@ -1,4 +1,6 @@
-require "buckygem/version"
+# frozen_string_literal: true
+
+require 'buckygem/version'
 
 module Buckygem
   autoload :ImagesCollection, 'buckygem/images_collection'

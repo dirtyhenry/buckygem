@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'time'
 
 module Buckygem
@@ -9,11 +11,12 @@ module Buckygem
 
       if obj.is_a?(String)
         return nil if obj.empty?
+
         obj = obj.downcase
       end
 
       case obj
-      when 'now'.freeze, 'today'.freeze
+      when 'now', 'today'
         Time.now
       when /\A\d+\z/, Integer
         Time.at(obj.to_i)
