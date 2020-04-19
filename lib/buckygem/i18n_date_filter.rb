@@ -20,5 +20,3 @@ module Buckygem
     end
   end
 end
-
-Liquid::Template.register_filter(Buckygem::I18nDateFilter)
