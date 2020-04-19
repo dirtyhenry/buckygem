@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    buckygem (0.4.3)
+    buckygem (0.5.0)
       i18n
       liquid (~> 4.0)
       mini_magick
