@@ -11,6 +11,9 @@ module Buckygem
   autoload :ImageFolderConverter, 'buckygem/image_folder_converter'
   autoload :ImageMetadata, 'buckygem/image_metadata'
   autoload :ImagesCollection, 'buckygem/images_collection'
+  autoload :YouTubeTag, 'buckygem/youtube_tag'
 end
 
 Liquid::Template.register_filter(Buckygem::I18nDateFilter)
+
+Liquid::Template.register_tag('youtube', Buckygem::YouTubeTag)
