@@ -3,8 +3,11 @@
 install:
 	bundle install
 
-open:
-	open . -a 'Visual Studio Code'
-
 test:
-	rake
+	bundle exec rspec
+
+lint:
+	bundle exec rubocop
+
+lintfix:
+	bundle exec rubocop -a
