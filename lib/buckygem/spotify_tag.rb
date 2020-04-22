@@ -16,11 +16,11 @@ module Buckygem
 
     def render(_context)
       <<~RENDERED_HTML
-        <p>
-          <a href="http://open.spotify.com/user/#{@playlist_author}/playlist/#{@playlist_id}">
+        <div>
+          <a class="button" href="http://open.spotify.com/user/#{@playlist_author}/playlist/#{@playlist_id}">
             écouter sur Spotify
           </a>
-        </p>
+        </div>
       RENDERED_HTML
     end
   end

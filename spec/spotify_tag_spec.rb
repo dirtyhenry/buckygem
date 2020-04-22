@@ -6,11 +6,11 @@ describe Buckygem::SpotifyTag do
   describe '#tag' do
     it 'can output a date in english' do
       expected_output = <<~EXPECTED_OUTPUT
-        <p>
-          <a href="http://open.spotify.com/user/author/playlist/1234">
+        <div>
+          <a class="button" href="http://open.spotify.com/user/author/playlist/1234">
             écouter sur Spotify
           </a>
-        </p>
+        </div>
       EXPECTED_OUTPUT
 
       template = Liquid::Template.parse('{% spotify 1234 author %}')
