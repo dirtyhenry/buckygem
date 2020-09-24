@@ -1,6 +1,12 @@
+AllCops:
+  NewCops: enable
+
 Layout/LineLength:
   Max: 100
 
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*spec.rb"
+
+Style/AccessorGrouping:
+  EnforcedStyle: separated

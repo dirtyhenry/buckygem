@@ -11,7 +11,7 @@ module Buckygem
 
     def render(_context)
       <<~RENDERED_HTML
-        <div>
+        <div class="buckygem-youtube-tag">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/#{@youtube_id}?rel=0" allowfullscreen></iframe>
           </div>
