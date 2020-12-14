@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'buckygem/slugify'
 require 'buckygem/version'
 require 'liquid'
 
