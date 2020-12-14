@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop-rake'
+  spec.add_development_dependency 'rubocop-rspec'
 
   spec.add_runtime_dependency 'i18n'
   spec.add_runtime_dependency 'liquid', '~> 4.0' # Same as Jekyll 3.6.0
