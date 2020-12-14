@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dirtyhenry/buckygem.svg?branch=master)](https://travis-ci.org/dirtyhenry/buckygem)
 
-A gem for random ruby utilities.
+Buckygem is a Jekyll plugin tighly linked to the [Kids theme](https://github.com/dirtyhenry/kids).
 
 ## Installation
 

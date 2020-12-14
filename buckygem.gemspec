@@ -20,14 +20,17 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.4.0'
+  spec.required_ruby_version = '>= 2.6.0'
 
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop-rake'
+  spec.add_development_dependency 'rubocop-rspec'
 
   spec.add_runtime_dependency 'i18n'
+  spec.add_runtime_dependency 'jekyll'
   spec.add_runtime_dependency 'liquid', '~> 4.0' # Same as Jekyll 3.6.0
   spec.add_runtime_dependency 'mini_magick'
 end
