@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'buckygem/slugify'
 require 'buckygem/version'
-require 'buckygem/category_page_generator'
+require 'i18n'
 require 'liquid'
 
 # Buckygem is a collection of Ruby utilities, especially useful
@@ -20,14 +19,21 @@ module Buckygem
   autoload :LocalizeFilter, 'buckygem/localize_filter'
   autoload :VimeoTag, 'buckygem/vimeo_tag'
   autoload :YouTubeTag, 'buckygem/youtube_tag'
-  autoload :CategoryLinkFilter, 'buckygem/category_page_generator'
-  autoload :TagLinkFilter, 'buckygem/tag_page_generator'
+
+  # String Utils
+
+  # Returns a slug from a string.
+  def self.slugify(string)
+    I18n.available_locales = %i[en fr]
+    I18n.transliterate(string)
+        .downcase
+        .strip
+        .gsub(/[^\w-]+/, '-')
+  end
 end
 
-Liquid::Template.register_filter(Buckygem::CategoryLinkFilter)
 Liquid::Template.register_filter(Buckygem::I18nDateFilter)
 Liquid::Template.register_filter(Buckygem::LocalizeFilter)
-Liquid::Template.register_filter(Buckygem::TagLinkFilter)
 
 Liquid::Template.register_tag('dailymotion', Buckygem::DailymotionTag)
 Liquid::Template.register_tag('vimeo', Buckygem::VimeoTag)
